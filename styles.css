@@ -1,0 +1,108 @@
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.buttons #rock {
+    width: 300px;
+    height: 280px;
+    background-image: url(images/rock-hand1.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: black;
+}
+.buttons #rock:hover{
+    cursor: all-scroll;
+    background-image: url(images/rock&roll.jpg);
+}
+.buttons #paper {
+    width: 300px;
+    height: 280px;
+    background-image: url(images/paper5.gif);
+    border-radius: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    
+}
+.buttons #paper:hover {
+    cursor: col-resize;
+    background-image: url(images/paper4.jpg);
+    
+}
+.buttons #scissors {
+    width: 300px;
+    height: 280px;
+    background-image: url(images/scissors-hand1.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.buttons #scissors:hover {
+    cursor: grab;
+    background-image: url(images/scissors-hand2.jpg);
+}
+#headerImage {
+    height: 250px;
+    background-image: url(images/rpc3.jpg);
+    margin-top: 10px;
+}
+#footerImage {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    background-image: url(images/rpc3.jpg) ;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+h1 {
+    display: grid;
+    justify-content: center;
+    color: red;
+}
+#header {
+    justify-content: center;
+    color: rgb(217, 219, 69);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+p {
+    display: flex;
+    justify-content: center;
+}
+body #finalResult {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    background-color: orangered;
+    margin-top: 30px;
+    height: 50px;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+} 
+body #results {
+    display: flex;
+    justify-content: center;
+    color: rgb(1, 6, 20);
+    font-weight: bolder;
+    margin-top: 5px;
+    height: 60px;
+    border: 2px royalblue;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(119, 116, 116);
+}
+img {
+    width: 300px;
+    height: 280px;
+}
+/*ffgfgffgfgfgfgfgfgfgfgfgfgfgfgfgfgf
++7*/
