@@ -1,6 +1,8 @@
+A game of rock-paper-scissors
+
 ###live demo
 
-Fell free to check my site: 
+Fell free to check my site:  https://arturgouveia1970.github.io/rock_paper_scissors/
 
 Built With
 Html
