@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll('.btn');
 
 let playerSelection;
 buttons.forEach((button) => {button.addEventListener('click',()=>{
-    playerSelection= button.id;
+    playerSelection = button.id;
     playRound(playerSelection, computerSelection);
 })})
 
@@ -28,13 +28,14 @@ let computerScore =0;
 function playRound(playerSelection, computerSelection) {
     let results = "";
     playerSelection = playerSelection.toLowerCase();
-    computerSelection = changeValue();
+    computerSelection;// = changeValue();
 
     if ((playerSelection === 'rock' && computerSelection === 'scissors') ||
         (playerSelection === 'scissors' && computerSelection === 'paper') ||
         (playerSelection === 'paper' && computerSelection === 'rock')) {
             playerScore+= 1;
-            results = (`You win ! ${playerSelection} beats ${computerSelection}<br><br>Player score: ${playerScore}<br>Computer score: ${computerScore}`);
+            results = ("You win! " + playerSelection + " beats "  + computerSelection 
+            + "<br>Player score: "+ playerScore + "<br>Computer score: " + computerScore);
 
             if (playerScore === 5) {
                 finalResult = ('Congratulations, you WON the game ! reload to play again.');
@@ -43,13 +44,13 @@ function playRound(playerSelection, computerSelection) {
             }
     } 
     else if (playerSelection === computerSelection) {
-        results = ("It's a tie, you both played " + playerSelection + "<br><br>Player score: " + playerScore +
+        results = ("It's a tie, you both played " + playerSelection + "<br>Player score: " + playerScore +
                    "<br>Computer score: " + computerScore );
     }
     else {
         computerScore += 1;
         results = ("You lose ! "  + computerSelection  + ' beats '  + playerSelection
-        + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore);
+        + "<br>Player score: " + playerScore + "<br>Computer score: " + computerScore);
 
         if (computerScore === 5) {
             finalResult = ('Computer WINS the game !!! reload to play again.');
@@ -67,5 +68,4 @@ function disableButtons() {
         elem.disabled = true;
     })
 }
-/*fhfhfhfhfhfhhhhhhhhhhhhhhhhhhh*/
 
